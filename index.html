@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Register Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Cash Register App</h1>
+        
+        <div id="register-display">
+            <div class="price-screen">
+                Total: $<span id="price-screen">0.00</span>
+            </div>
+
+            <div class="input-section">
+                <label for="cash">Enter Cash:</label>
+                <input type="number" id="cash" class="user-input" placeholder="0.00" />
+                <button id="purchase-btn">Purchase</button>
+            </div>
+
+            <div id="change-due"></div>
+        </div>
+
+        <div class="drawer-container">
+            <h3>Cash in Drawer:</h3>
+            <div id="cid-display"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
